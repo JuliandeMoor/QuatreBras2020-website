@@ -1,0 +1,71 @@
+div.hero-wrapper{
+
+    
+    height: 100vh;
+    color:#FFFFFA;
+
+    &#post{
+        height: 50vh;
+
+        div.overlay{
+            height: 50vh;
+        }
+    section.bg-img{
+            height: 50vh;
+        }
+    }
+
+    section.hero-achtergrond{
+        div.overlay{
+            width: 100%;;
+            height: 100vh;
+            position: absolute;
+            top:0;
+            left:0;
+           
+            background-color: black;
+            opacity:0.5;
+            z-index: -1;
+        }
+        section.bg-img{
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top:0;
+            left: 0;
+            z-index: -2;
+
+            background-position: center;
+            background-size: 100%;
+
+        }
+
+       
+    }
+
+    div.hero-container{
+        width:65%;
+        position: relative;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+        section.hero-titel, section.hero-ondertitel{
+            text-align:center;
+            
+            
+            h4{
+                height: auto;
+                width: 50%;
+                display: inline;
+                
+            }
+        }
+
+    
+       
+    }
+}
+
+
+

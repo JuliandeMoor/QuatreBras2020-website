@@ -1,0 +1,68 @@
+$susy: (
+  columns: 4, /* aantal kolommen in container */
+  gutters: 2/8, /* grootte van ruimte tussen kolommen */
+  container: 100%, /* (maximale) breedte van container */
+  global-box-sizing: border-box, /* verander standaard box-sizing */
+);
+
+$margin: gutters();
+
+
+div.clubs-container{
+    width: 100%;
+    div.background-wrapper{
+        position: relative;
+        div.background{
+            height: 75vh;
+            width: 100%;
+            background-color: $blue;
+            position: absolute;
+            bottom: 0;
+            z-index: -1;
+        }
+    
+        div.clubs-wrapper{
+            padding-bottom: 150px;
+        }
+
+    ul.clubs-container{
+        @include container();
+        
+        li{
+            @include span(2 of 8);
+            background-color:lightgrey;
+            height: 425px;
+            
+            
+            &:nth-child(-n+4){
+                margin-bottom: $margin;
+            }
+            &:nth-child(4n){
+                @include span(last);
+            }
+
+
+
+            a{
+                display: block;
+                border-bottom: none;
+                padding: 0;
+                
+
+                width: 100%;
+                height: 100%;
+                position: relative;
+
+                p{
+                    display: block;
+                    text-align: center;
+                    position: absolute;
+                    top: 50%;
+                    left:50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+}
+}

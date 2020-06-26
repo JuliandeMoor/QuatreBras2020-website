@@ -1,0 +1,24 @@
+$break-small: 520px;
+$break-large: 1200px;
+
+$font-m: 1em;
+$font-xl: $font-m * 3;
+
+$black : #1E1E1E;
+$blue : #004781;
+$white : #FFFFFA;
+
+.clearfix::after{
+    content:"";
+    clear:both;
+    display:table;
+}
+
+.rounded{
+    border-radius: 20px;
+}
+
+@mixin box($width, $height){
+    width: $width;
+    height: $height;
+}

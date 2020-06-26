@@ -1,0 +1,42 @@
+nav{
+    padding: 0 100px;
+    ul{
+        width: inherit;
+        @extend  .clearfix;
+           
+        li.float-left{
+            float:left;
+            margin: 0;
+
+            a{
+                transition: none;
+                padding:0;
+
+                
+            }   
+
+           
+        }
+            
+
+           li{
+                float:right;
+                line-height: 100px;
+                margin-left: 75px;
+                div.site-branding{
+            
+            
+                
+                    a{
+                        
+                        border:none;
+                       
+                    }
+                }
+           }
+           
+       }
+}
+
+
+

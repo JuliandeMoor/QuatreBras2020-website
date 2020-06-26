@@ -1,0 +1,145 @@
+
+
+div.section-wrapper{
+    
+    @extend .clearfix;
+
+    p{
+        margin:0;
+    }
+
+            
+    
+    div.thumbs-container{
+        float:left;
+        width: 50%;
+        margin-top: 50px;
+            
+        section.thumbs{
+
+            &.big-thumbs{
+                position: relative;
+                padding-top: 50%;
+
+                section.bg-img{
+                    width: 100%;
+                    height: 500px;
+                    position: absolute;
+                    background-size: 100%;
+                    top:0;
+                    left:0;
+                    z-index: -1;
+                }
+
+                div.content-wrapper{
+                    width:85%;
+                    padding: 50px 25px 0 25px;
+                    background-color:$white;
+                    @extend .clearfix;
+
+                    div.content-container{
+                        float:left;
+
+                        section.event-date{
+                            h3{
+                                font-size: 3em;
+                            }
+                        }
+
+                        &.content-container-info{
+                            width: 75%;
+
+                            section{
+                                margin-left: 50px;
+
+                                &.cta-button{
+                                    margin-top: 25px;
+                                    a{
+                                        color:black;
+                                        border-bottom: 2px solid black;
+                                        }
+                                    }
+                                        
+                                &.thumb-title{
+                                    margin-bottom: 15px;
+                                    p{
+                                        font-weight: 500;
+                                        font-size: 1.5em;
+                                    }
+                                }
+                                    
+                            }
+                            
+                        }       
+                    }
+                }
+            }
+
+            &.small-thumbs{
+                margin-left: 100px;
+               
+                div.content-wrapper{
+                    margin-bottom: 100px;
+                
+                    @extend .clearfix;
+
+                    div.content-container{
+                        float:left;
+                        section.event-date{
+                            h3{
+                                font-size: 2em;
+                            }
+                        }
+                        &.content-container-info{
+                            width: 75%;
+                            section{
+                                margin-left: 35px;
+                            
+
+                                &.thumb-title{
+                                    p{
+                                        font-weight: 500;
+                                        font-size: 1.25em;
+                                    }
+                                }
+                                
+                                &.cta-button{
+                                    margin-top: 20px;
+                                    a{
+                                        color:black;
+                                        border-bottom: 2px solid black;
+                                        font-size: 1em;
+                                    }
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } //thumbs
+
+
+
+
+
+
+
+    }      
+}
+    
+
+                
+
+                
+
+
+            
+            
+                
+                
+               
+           
+               
+                
+                
